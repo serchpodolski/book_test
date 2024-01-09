@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 36px;
+            color: navy;
+            text-align: center;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            color: darkgray;
+            text-align: center;
+        }
+        .container{
+            text-align: center;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-shadow: 2px 2px 2px darkgray;
+            font-weight: bold;
+        }
+        .btn-primary{
+            border-radius: 5px;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: black;
+            padding: 5px 20px;
+            cursor:pointer;
+        }
+    </style>
+    <title>
+        LR Prediction using Flask
+    </title>
+</head>
+
+<body>
+    <h1>
+        <div>Prediction from linear regression</div>
+    </h1>
+    <hr><br>
+    <h2>
+        <div>Enter values</div>
+    </h2>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form method="POST" action="/predict">
+                    <div class="form-group">
+                        <label for="var_1"><p>Var 1</p></label>
+                        <input type="text" name="var_1">
+                    </div>
+                    <div class="form-group">
+                        <label for="var_2"><p>Var 2</p></label>
+                        <input type="text" name="var_2">
+                    </div>
+                    <div class="form-group">
+                        <label for="var_3"><p>Var 3</p></label>
+                        <input type="text" name="var_3">
+                    </div>
+                    <div class="form-group">
+                        <label for="var_4"><p>Var 4</p></label>
+                        <input type="text" name="var_4">
+                    </div>
+                    <div class="form-group">
+                        <label for="var_5"><p>Var 5</p></label>
+                        <input type="text" name="var_5">
+                    </div>
+                    <br><br>
+                    <input class="btn-primary" type="submit" value="Submit">
+                    <br><br><hr>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
